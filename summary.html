@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>JOIN</title>
+    <link rel="stylesheet" href="summary.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js"></script>
     
+</head>
+
+<body onload="init()">
+    <div class="summary-headline-container">
+        <div class="summary-headline-left">Summary</div>
+        <div class="summary-headline-middle"></div>
+        <div class="summary-headline-right">Everything in a Nutshell</div>
+    </div>
+
+    <div class="summary-greet-container">
+        <div class="summary-greet-top">Good morning,</div>
+        <div class="summary-greet-bottom">Guest</div>
+    </div>
+
+    <div class="summary-details-container">
+        <div class="summary-tasks-container">
+            <a href="board.html">
+                <div class="summary-tasks-btn">
+                    <div class="summary-tasks-frame">
+                        <div class="summary-tasks-amount" id="summary-tasks-amount-alltasks">5
+                        </div>
+                        <div class="summary-tasks-text">Tasks in Board</div>
+                    </div>
+                </div>
+            </a>
+            <a href="board.html">
+                <div class="summary-tasks-btn">
+                    <div class="summary-tasks-frame">
+                        <div class="summary-tasks-amount" id="summary-tasks-amount-alltasks">2
+                        </div>
+                        <div class="summary-tasks-text">Tasks in Progress</div>
+                    </div>
+                </div>
+            </a>
+            <a href="board.html">
+                <div class="summary-tasks-btn">
+                    <div class="summary-tasks-frame">
+                        <div class="summary-tasks-amount" id="summary-tasks-amount-alltasks">2
+                        </div>
+                        <div class="summary-tasks-text">Awaiting Feedback</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="summary-urgency-container">
+            <a href="board.html">
+                <div class="summary-urgency-frame">
+                    <div class="summary-urgency-image">
+                    </div>
+                    <div class="summary-urgency-details">
+                        <div class="summary-urgency-class">0
+                        </div>
+                        <div class="summary-urgency-text">Urgent
+                        </div>
+                </div>
+                </div>
+                <div class="summary-urgency-border">
+                </div>
+                <div class="summary-urgency-deadline">
+                    <div class="summary-deadline-top">No 
+                    </div>
+                    <div class="summary-deadline-bottom">Upcoming Deadline
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="summary-to-do-container">
+            <a href="board.html">
+                <div class="summary-to-do-frame">
+                    <div class="summary-pen-image">
+                    </div>
+                    <div class="summary-to-do-check">
+                    <div class="summary-to-do-amount">0
+                    </div>
+                    <div class="summary-to-do-text">To-do 
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="board.html">
+                <div class="summary-to-do-frame">
+                    <div class="summary-done-image">
+                    </div>
+                    <div class="summary-to-do-check">
+                        <div class="summary-to-do-amount">0
+                        </div>
+                        <div class="summary-to-do-text">Done 
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div w3-include-html="templates/header.html"></div>
+
+    <div w3-include-html="templates/navbar.html"></div>
+
+
 </body>
+
 </html>
